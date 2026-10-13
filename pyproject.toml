@@ -1,0 +1,7 @@
+[project]
+name = "interviewer-agent"
+version = "0.1.0"
+description = "AI agent that runs first-round technical interviews"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []

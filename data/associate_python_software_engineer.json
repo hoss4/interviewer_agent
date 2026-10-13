@@ -1,0 +1,107 @@
+{
+  "role": "Associate Python Software Engineer",
+  "level": "associate",
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Python data types",
+      "question": "What is the difference between a list and a tuple in Python, and when would you use each?",
+      "key_points": [
+        "Lists are mutable, tuples are immutable",
+        "Tuples are hashable when their items are, so they can be dict keys or set members",
+        "Tuples suit fixed records; lists suit collections that change",
+        "Tuples are slightly lighter in memory"
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "dictionaries",
+      "question": "How does a Python dictionary look up a value by key, and what makes an object usable as a key?",
+      "key_points": [
+        "Dicts are hash tables with average O(1) lookup",
+        "The key's hash finds the slot, equality confirms the match",
+        "Keys must be hashable, which in practice means immutable",
+        "Since Python 3.7 dicts keep insertion order"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "error handling",
+      "question": "How do you handle errors in Python? Walk me through try, except, else and finally.",
+      "key_points": [
+        "try wraps code that may raise",
+        "except catches specific exceptions; avoid bare except",
+        "else runs only if no exception was raised",
+        "finally always runs, used for cleanup",
+        "Can raise custom exceptions or re-raise"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "functions and arguments",
+      "question": "What do *args and **kwargs mean in a function definition, and why should you avoid a mutable default argument like a list?",
+      "key_points": [
+        "*args collects extra positional arguments as a tuple",
+        "**kwargs collects extra keyword arguments as a dict",
+        "Default values are evaluated once, when the function is defined",
+        "A mutable default is shared between calls; use None and create it inside"
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "object-oriented programming",
+      "question": "Explain classes, inheritance and the self parameter in Python. Give a simple example of where inheritance helps.",
+      "key_points": [
+        "A class is a blueprint; instances hold their own state",
+        "self refers to the current instance",
+        "Inheritance lets a subclass reuse and override parent behaviour",
+        "super() calls the parent implementation",
+        "Mentions composition as an alternative when inheritance does not fit"
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "generators",
+      "question": "What is a generator in Python, and how is it different from returning a list?",
+      "key_points": [
+        "Created with yield or a generator expression",
+        "Produces values lazily, one at a time",
+        "Uses little memory for large or infinite sequences",
+        "Can only be iterated once"
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "testing",
+      "question": "How would you write unit tests for a Python function? Which tools would you use and what would you test?",
+      "key_points": [
+        "Uses pytest or unittest",
+        "Tests normal cases, edge cases and error cases",
+        "Tests are small, independent and repeatable",
+        "Mocks external dependencies such as APIs or databases"
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "dependencies and environments",
+      "question": "Why do Python projects use virtual environments, and how do you manage a project's dependencies?",
+      "key_points": [
+        "Isolates each project's packages from the system and other projects",
+        "Tools such as venv, pip, uv or poetry",
+        "Dependencies declared in pyproject.toml or requirements.txt",
+        "Lock files pin versions for reproducible installs"
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "version control",
+      "question": "Describe how you use Git when working on a feature with a team.",
+      "key_points": [
+        "Creates a feature branch from main",
+        "Small, clear commits",
+        "Opens a pull request for code review",
+        "Resolves merge conflicts and keeps the branch up to date"
+      ]
+    }
+  ]
+}

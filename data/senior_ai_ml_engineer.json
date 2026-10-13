@@ -1,0 +1,123 @@
+{
+  "role": "Senior AI/ML Engineer",
+  "level": "senior",
+  "questions": [
+    {
+      "id": 1,
+      "topic": "overfitting",
+      "question": "How do you detect and reduce overfitting in a machine learning model?",
+      "key_points": [
+        "Gap between training and validation performance",
+        "Uses a held-out set or cross-validation",
+        "Regularization such as L1, L2 or dropout",
+        "More or augmented data, simpler model, early stopping"
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "evaluation metrics",
+      "question": "You are building a fraud detection model where only 1% of transactions are fraud. How would you evaluate it?",
+      "key_points": [
+        "Accuracy is misleading on imbalanced data",
+        "Precision, recall, F1 and the precision-recall curve",
+        "Chooses the decision threshold by the business cost of errors",
+        "Stratified splits; handles imbalance with class weights or resampling"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "transformers",
+      "question": "Explain how the attention mechanism in a transformer works and why it replaced recurrent networks for most language tasks.",
+      "key_points": [
+        "Queries, keys and values; weights from scaled dot products and softmax",
+        "Each token can attend to every other token directly",
+        "Processes the sequence in parallel, unlike RNNs",
+        "Handles long-range dependencies better",
+        "Positional encodings supply word order"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "retrieval-augmented generation",
+      "question": "How would you design a retrieval-augmented generation system to answer questions over a company's internal documents?",
+      "key_points": [
+        "Chunks documents and creates embeddings",
+        "Stores them in a vector database or search index",
+        "Retrieves relevant chunks, optionally hybrid search and reranking",
+        "Puts retrieved context in the prompt and cites sources",
+        "Evaluates retrieval quality and answer faithfulness"
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "LLM evaluation",
+      "question": "How do you evaluate the quality of an LLM-based application before and after it goes to production?",
+      "key_points": [
+        "Builds a test set of representative inputs with expected outputs",
+        "Uses automatic metrics, LLM-as-judge and human review",
+        "Checks for hallucination, safety and format errors",
+        "Monitors in production with logging and user feedback",
+        "Runs regression tests when prompts or models change"
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "model deployment",
+      "question": "Walk me through how you would take a trained model to production and serve it reliably.",
+      "key_points": [
+        "Packages the model with versioned artifacts and dependencies",
+        "Serves it behind an API, batch job or streaming pipeline",
+        "Containers and CI/CD for repeatable releases",
+        "Considers latency, throughput, scaling and cost",
+        "Safe rollout such as canary, shadow or A/B testing"
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "monitoring and drift",
+      "question": "After deployment, a model's performance slowly degrades. How would you find out why and fix it?",
+      "key_points": [
+        "Monitors input data and prediction distributions",
+        "Distinguishes data drift from concept drift",
+        "Checks for upstream data pipeline or feature bugs",
+        "Retrains on fresh data and compares against the current model",
+        "Sets alerts and a retraining process"
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "fine-tuning versus prompting",
+      "question": "When would you fine-tune a model instead of using prompt engineering or retrieval, and what are the trade-offs?",
+      "key_points": [
+        "Prompting and retrieval are cheaper and faster to change",
+        "Retrieval suits knowledge that changes or must be cited",
+        "Fine-tuning suits consistent style, format or a narrow task",
+        "Fine-tuning needs quality labelled data and costs more to maintain",
+        "Mentions parameter-efficient methods such as LoRA"
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "data leakage",
+      "question": "What is data leakage, and how have you prevented it in your projects?",
+      "key_points": [
+        "Information from outside the training data or from the future leaks into features",
+        "Leads to good offline scores but poor real-world performance",
+        "Splits data before preprocessing and fits transforms on training data only",
+        "Uses time-based splits for time series"
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "system trade-offs",
+      "question": "Your model is accurate but too slow and expensive to serve. What options would you consider?",
+      "key_points": [
+        "Smaller model or knowledge distillation",
+        "Quantization or pruning",
+        "Batching and caching",
+        "Hardware choices such as GPU or optimized runtimes",
+        "Measures the accuracy cost of each change"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "role": "Senior Business Analyst",
+  "level": "senior",
+  "questions": [
+    {
+      "id": 1,
+      "topic": "requirements gathering",
+      "question": "How do you gather and document requirements for a new project when stakeholders are not sure what they need?",
+      "key_points": [
+        "Interviews, workshops, observation and document analysis",
+        "Focuses on the underlying business problem, not the requested solution",
+        "Documents as user stories, use cases or a requirements document",
+        "Validates with stakeholders and defines acceptance criteria"
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "stakeholder management",
+      "question": "Two senior stakeholders give you conflicting requirements. How do you handle it?",
+      "key_points": [
+        "Understands each side's goals and constraints",
+        "Brings them together with data on impact and cost",
+        "Links the decision to business objectives and priorities",
+        "Escalates to the sponsor or decision owner when needed",
+        "Documents the agreed outcome"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "prioritization",
+      "question": "How do you prioritize a backlog of requirements when there is not enough time or budget to deliver everything?",
+      "key_points": [
+        "Uses a framework such as MoSCoW, value versus effort or RICE",
+        "Weighs business value, risk, dependencies and cost",
+        "Involves stakeholders in the trade-offs",
+        "Revisits priorities as things change"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "process modelling",
+      "question": "Describe how you would analyse and improve an existing business process.",
+      "key_points": [
+        "Maps the current state, for example with BPMN or a flowchart",
+        "Identifies bottlenecks, waste and pain points with data",
+        "Designs the future state with measurable improvements",
+        "Plans the change and measures results after rollout"
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "data analysis",
+      "question": "Tell me how you would use data to support a business recommendation. Which tools would you use?",
+      "key_points": [
+        "Starts from the business question",
+        "Gathers and cleans data, checks its quality",
+        "Uses SQL, Excel or BI tools such as Power BI or Tableau",
+        "Presents findings clearly with assumptions and limits",
+        "Links the insight to a concrete recommendation"
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "agile delivery",
+      "question": "What is the role of a business analyst in an agile team, and how does it differ from a waterfall project?",
+      "key_points": [
+        "Works closely with the product owner on the backlog",
+        "Writes user stories with acceptance criteria",
+        "Refines requirements continuously instead of all upfront",
+        "Waterfall relies on detailed requirements signed off early"
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "scope change",
+      "question": "Midway through a project, a stakeholder asks for a significant new feature. What do you do?",
+      "key_points": [
+        "Assesses impact on scope, timeline, cost and risk",
+        "Follows the change control process",
+        "Presents options and trade-offs to decision makers",
+        "Updates requirements and communicates the decision"
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "measuring success",
+      "question": "How do you define and measure whether a project delivered its intended business value?",
+      "key_points": [
+        "Agrees KPIs and success criteria at the start",
+        "Captures a baseline before the change",
+        "Measures after delivery and compares with the baseline",
+        "Reports results and lessons learned"
+      ]
+    }
+  ]
+}
