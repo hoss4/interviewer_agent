@@ -1,0 +1,14 @@
+# Placeholders: {candidate_name}, {role}, {num_questions}
+greeting: |
+  Hello {candidate_name}, I'm Neo, the interviewer agent who will conduct this meeting.
+  This is your interview for the {role} role. I'll ask you {num_questions} questions.
+
+rules_header: "Before we start, here are the rules:"
+
+rules:
+  - Keep your camera on for the whole interview.
+  - Don't open online resources or other tabs to look up the questions.
+  - Answer every question by yourself, with no outside help.
+  - This interview is recorded.
+
+ready_prompt: "When you're ready, type anything to start: "

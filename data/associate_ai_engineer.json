@@ -1,0 +1,50 @@
+{
+  "role": "Associate AI Engineer",
+  "level": "associate",
+  "questions": [
+    {
+      "id": 1,
+      "topic": "train, validation and test sets",
+      "question": "Why do we split data into training, validation and test sets, and what is each one used for?",
+      "key_points": [
+        "Training set is used to fit the model",
+        "Validation set is used to tune hyperparameters and choose models",
+        "Test set is held out for a final, unbiased estimate of performance",
+        "Reusing the test set for tuning leaks information and gives optimistic results"
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "precision and recall",
+      "question": "What is the difference between precision and recall, and when would you care more about one than the other?",
+      "key_points": [
+        "Precision: of the predicted positives, how many are correct",
+        "Recall: of the actual positives, how many were found",
+        "Prefer recall when missing a positive is costly, such as disease screening",
+        "Prefer precision when false alarms are costly, such as spam filtering"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "embeddings",
+      "question": "What is an embedding, and how would you use embeddings to find documents similar to a user's query?",
+      "key_points": [
+        "An embedding is a dense vector that represents the meaning of text or other data",
+        "Similar items have vectors that are close together",
+        "Embed the documents and the query with the same model",
+        "Rank documents by a similarity measure such as cosine similarity, often with a vector database"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "LLM hallucinations",
+      "question": "What does it mean when a large language model hallucinates, and what are some ways to reduce it?",
+      "key_points": [
+        "The model produces fluent but false or unsupported content",
+        "Ground answers in retrieved sources (RAG)",
+        "Clear prompts, lower temperature, and allowing the model to say it doesn't know",
+        "Validate outputs, for example by citing sources or checking against data"
+      ]
+    }
+  ]
+}
